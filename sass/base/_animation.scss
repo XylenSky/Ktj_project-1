@@ -1,0 +1,73 @@
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveinbotton {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-.5rem);
+  }
+}
+
+ @keyframes gradient {
+ 	    0% {
+	 	background-position: 0% 50%;
+ 	 }
+   	 50% {
+ 	 	background-position: 100% 50%;
+ 	 }
+	   100% {
+		background-position: 0% 50%;
+	 }
+}
+
+
+
+		.button{
+			padding: 0.6rem;
+			outline: none;
+			border: none;
+			border-radius: 3px;
+			color: black;
+			font-weight: bold;
+
+			cursor: pointer;
+			transition: 0.4s ease;
+			&:hover{
+				background: dodgerblue;
+				color: white;
+}
+}

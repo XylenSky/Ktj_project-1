@@ -1,0 +1,51 @@
+/* color_1 : #E98074 color_2 : #8E8D8A color_3 : rgba(#aa9f9f, 0.8) color_4 : rgba(#854d36, 0.8)  */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/popup";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "pages/home";
+
+
+
+
+  .overall{
+	background: linear-gradient(-45deg, rgba($color-overall1, 0.5), rgba($color-overall2, 0.5), rgba($color-overall3, 0.5), rgba($color-overall4, 0.5));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+
+
+.launching-soon{
+  height: 95vh;
+  content: "";
+  left: 10%;
+  display: inline-block;
+  // clear: both;
+  text-transform: uppercase;
+  // background-color: rgba(162, 228, 181, 0.8);
+  position: relative;
+
+  &--box{
+    float: left;
+    padding: 10rem;
+    height: 2rem;
+    width: 33.33%;
+    position: absolute;
+    // background-color: white;
+  }
+
+}

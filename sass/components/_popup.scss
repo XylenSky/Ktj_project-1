@@ -1,0 +1,68 @@
+.popup{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-balck, 0.7);
+  z-index: 9999;
+ opacity: 0;
+ visibility: hidden;
+ transition: all .3s;
+
+ &:target{
+   opacity: 1;
+   visibility: visible;
+ }
+
+ &__close{
+   &:link,
+   &:visited{
+     color: $color-balck;
+     position: absolute;
+     top: 2.5rem;
+     right: 2.5rem;
+     font-size: 3rem;
+     text-decoration: none;
+     display: inline;
+     transition: all .2s;
+   }
+ }
+
+  &__content{
+     @include abscenter;
+     width: 75%;
+
+     background-color: rgb(241, 232, 216);
+     box-shadow: 0 2rem 4rem rgba($color-balck, 0.2);
+     border-radius: .3rem;
+}
+
+  &__left{
+
+    width: 33.3333%;
+  }
+
+  &__right{
+
+    width: 66.6666%;
+  }
+
+      &__img{
+          display: block;
+          width: 100%;
+    border: 10rem;
+    border-color: black;
+
+      }
+
+
+  &__text{
+
+
+
+  }
+
+
+
+}

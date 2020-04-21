@@ -1,0 +1,21 @@
+
+
+
+.footer{
+  background-color: $color-dark;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  
+&_language{
+min-height:30vh;
+
+
+&__section{
+  float: left;
+  // margin-left: .5rem;
+  width: calc((100% - 2*#{$gutter-horizontal}) / 2);
+
+
+    }
+  }
+}
